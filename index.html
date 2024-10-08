@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <table class="table container">
+      <thead>
+        <tr>
+          <th>
+            Title
+          </th>
+          <th>
+            Duration
+          </th>
+          <th>
+            Genres:
+          </th>
+        </tr>
+      
+      </thead>
+      <tbody id="tbody">
+      
+
+      </tbody>
+    </table>
+
+    <form class="container" id="submit">
+      <div>
+        <label for="addTitle">Title</label>
+        <input class="form-control" name="addTitle" id="addTitle"  type="text">
+  
+      </div>
+
+      <div>
+        <label for="addDuration" >Duration</label>
+        <input class="form-control" type="number" name="addDuration" id="addDuration">
+      </div>
+      <button  class="btn btn-success">Submit</button>
+    </form>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
