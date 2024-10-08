@@ -24,26 +24,19 @@ document.addEventListener("DOMContentLoaded", () =>{
     let line = "";
     for (let index = 0; index < movies.length; index++) {
      
-
-      const text = `
-          <tr>
-          <td id="title">
-            ${movies[index].title}
-          </td>
-          <td id="duration">
-          ${movies[index].duration}
-          </td>
-          <td id="genres">
-          ${movies[index].genres}
-          </td>
-        </tr>
-      
-      `
-
-      line += text;
+      const tr = document.createElement('tr');
+      const td1 = document.createElement('td');
+      const td2 = document.createElement('td');
+      const td3 = document.createElement('td');
+      td1.textContent = movies[index].title;
+      td2.textContent = ` ${movies[index].duration}`;
+      td3.textContent = `${movies[index].genres}`;
+      tr.appendChild(td1);
+      tr.appendChild(td2);
+      tr.appendChild(td3);
+      tbody!.appendChild(tr)
     }
 
-    tbody.innerHTML += line;
 
     
     
